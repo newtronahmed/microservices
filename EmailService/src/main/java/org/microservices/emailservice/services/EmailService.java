@@ -1,29 +1,30 @@
-package org.microservices.emailservice.services;
+package org.microservices.emailservice.service;
 
-import org.microservices.emailservice.Exceptions.EmailSendException;
 import org.microservices.emailservice.dto.EmailDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class EmailService {
+
     @Autowired
     private JavaMailSender mailSender;
 
-    public void sendEmail(EmailDto email) {
-        try {
-            SimpleMailMessage message = new SimpleMailMessage();
-            message.setTo(email.emailTo());
-            message.setSubject(email.subject());
-            message.setText(email.text());
-            mailSender.send(message);
-        } catch (MailException e) {
-            // Log the error and handle it appropriately
-            // You could throw a custom exception or log the error
-            throw new EmailSendException("Failed to send email", e);
+    public void sendEmail(EmailDto emailDto) {
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setTo(emailDto.emailTo());
+        message.setSubject(emailDto.subject());
+        message.setText(emailDto.text());
+        mailSender.send(message);
+    }
+
+    public void sendEmails(List<EmailDto> emailDtos) {
+        for (EmailDto emailDto : emailDtos) {
+            sendEmail(emailDto);
         }
     }
 }

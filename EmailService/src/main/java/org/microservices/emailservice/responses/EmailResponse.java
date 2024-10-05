@@ -1,5 +1,8 @@
-package org.microservices.emailservice;
+package org.microservices.emailservice.responses;
 
+import lombok.Getter;
+
+@Getter
 public class EmailResponse {
     private String message;
     private boolean status;
@@ -9,11 +12,4 @@ public class EmailResponse {
         this.status = status;
     }
 
-    public String getMessage() {
-        return message;
-    }
-
-    public boolean isStatus() {
-        return status;
-    }
 }
