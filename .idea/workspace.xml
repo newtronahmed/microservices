@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="069b1c2c-a52f-469e-9ca9-9fa82ec57e15" name="Changes" comment="" />
+    <list default="true" id="069b1c2c-a52f-469e-9ca9-9fa82ec57e15" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grpc/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductCatalog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductCatalog/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductCatalog/src/main/java/org/microservices/productcatalog/ProductCatalogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductCatalog/src/main/java/org/microservices/productcatalog/ProductCatalogApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductCatalog/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProductCatalog/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/src/main/java/org/microservices/eureka/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/java/org/microservices/eureka/EurekaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grpc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/grpc/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +29,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ApiGateway/pom.xml" root0="SKIP_INSPECTION" />
@@ -38,6 +58,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ProductCatalogApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;eureka&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ITCompliance/Downloads/MicroServices&quot;,
@@ -59,7 +80,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ApiGatewayApplication">
+  <component name="RunManager">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.microservices.apigateway.ApiGatewayApplication" />
       <extension name="coverage">
@@ -72,24 +93,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.microservices.apigateway.ApiGatewayApplication" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="MicroServices" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="eureka" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.microservices.eureka.EurekaApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductCatalogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="productcatalog" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.microservices.productcatalog.ProductCatalogApplication" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="MicroServices" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,10 +132,27 @@
       <workItem from="1727862991500" duration="3425000" />
       <workItem from="1727868671636" duration="241000" />
       <workItem from="1727868922889" duration="620000" />
+      <workItem from="1728067622108" duration="315000" />
+      <workItem from="1728067993386" duration="68000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ApiGateway/src/main/java/org/microservices/apigateway/ApiGatewayApplication.java</url>
+          <line>10</line>
+          <properties class="org.microservices.apigateway.ApiGatewayApplication" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
