@@ -8,18 +8,23 @@ import org.microservices.grpc.ProductResponse;
 import org.microservices.grpc.ProductCatalogServiceGrpc;
 //import org.microservices.grpc.responses.ProductRequest;
 //import org.microservices.grpc.responses.ProductResponse;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 
 @Service
 public class ProductServiceClient {
+    @Value("${grpc.server.port}")
+    private int grpcServerPort;
 
+    @Value("${grpc.server.host}")
+    private String grpcServerhost;
     private ProductCatalogServiceGrpc.ProductCatalogServiceBlockingStub productServiceStub;
 
     @PostConstruct
     private void init() {
-        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 9091)
+        ManagedChannel channel = ManagedChannelBuilder.forAddress(grpcServerhost, grpcServerPort)
                 .usePlaintext()
                 .build();
 
