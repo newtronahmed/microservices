@@ -15,16 +15,11 @@ import javax.annotation.PostConstruct;
 
 @Service
 public class ProductServiceClient {
-    @Value("${grpc.server.port}")
-    private int grpcServerPort;
-
-    @Value("${grpc.server.host}")
-    private String grpcServerhost;
     private ProductCatalogServiceGrpc.ProductCatalogServiceBlockingStub productServiceStub;
 
     @PostConstruct
     private void init() {
-        ManagedChannel channel = ManagedChannelBuilder.forAddress(grpcServerhost, grpcServerPort)
+        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 9091)
                 .usePlaintext()
                 .build();
 
