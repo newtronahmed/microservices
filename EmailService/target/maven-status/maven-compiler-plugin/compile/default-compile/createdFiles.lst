@@ -1,0 +1,9 @@
+org\microservices\emailservice\controllers\EmailController.class
+org\microservices\emailservice\dto\EmailDto.class
+org\microservices\emailservice\dto\EmailMessage.class
+org\microservices\emailservice\service\EmailService.class
+org\microservices\emailservice\config\RabbitMQConfig.class
+org\microservices\emailservice\EmailServiceApplication.class
+org\microservices\emailservice\Exceptions\EmailSendException.class
+org\microservices\emailservice\responses\EmailResponse.class
+org\microservices\emailservice\services\EmailConsumerService.class

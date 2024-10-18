@@ -1,0 +1,9 @@
+C:\Users\ITCompliance\Downloads\MicroServices\EmailService\src\main\java\org\microservices\emailservice\config\RabbitMQConfig.java
+C:\Users\ITCompliance\Downloads\MicroServices\EmailService\src\main\java\org\microservices\emailservice\controllers\EmailController.java
+C:\Users\ITCompliance\Downloads\MicroServices\EmailService\src\main\java\org\microservices\emailservice\dto\EmailDto.java
+C:\Users\ITCompliance\Downloads\MicroServices\EmailService\src\main\java\org\microservices\emailservice\dto\EmailMessage.java
+C:\Users\ITCompliance\Downloads\MicroServices\EmailService\src\main\java\org\microservices\emailservice\EmailServiceApplication.java
+C:\Users\ITCompliance\Downloads\MicroServices\EmailService\src\main\java\org\microservices\emailservice\Exceptions\EmailSendException.java
+C:\Users\ITCompliance\Downloads\MicroServices\EmailService\src\main\java\org\microservices\emailservice\responses\EmailResponse.java
+C:\Users\ITCompliance\Downloads\MicroServices\EmailService\src\main\java\org\microservices\emailservice\services\EmailConsumerService.java
+C:\Users\ITCompliance\Downloads\MicroServices\EmailService\src\main\java\org\microservices\emailservice\services\EmailService.java
